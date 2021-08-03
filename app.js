@@ -14,8 +14,8 @@ const Tareas = require('./models/tareas')
 
 console.clear();
 
-const main = async() => {
-    
+const main = async () => {
+
     let opt = '';
     const tareas = new Tareas();
 
@@ -63,7 +63,7 @@ const main = async() => {
                 break;
         }
 
-        guardarDB( tareas.listadoArr);
+        guardarDB(tareas.listadoArr);
 
         await pausa();
 
